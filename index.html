@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Details</title>
+</head>
+<body>
+  <script>
+    // Fetch JSON data (simulating an external JSON file)
+    const books = [
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publicationYear": 1925,
+        "genres": ["Fiction", "Classics"]
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "publicationYear": 1960,
+        "genres": ["Fiction", "Coming-of-Age"]
+      }
+    ];
+
+    // Display required details in the console
+    console.log("Title of the first book:", books[0].title);
+    console.log("Author of the second book:", books[1].author);
+    console.log("Genres of all books:", books.map(book => book.genres).flat());
+  </script>
+</body>
+</html>
